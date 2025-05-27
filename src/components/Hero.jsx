@@ -44,15 +44,15 @@ const Hero = () => {
           scale: 1,
           width: "100%",
           height: "100%",
-          duration: 1,
-          ease: "power1.inOut",
+          duration: 0.8,
+          ease: "power2.inOut",
           onStart: () => nextVdRef.current.play(),
         });
         gsap.from("#current-video", {
           transformOrigin: "center center",
           scale: 0,
-          duration: 1.5,
-          ease: "power1.inOut",
+          duration: 0.8,
+          ease: "power2.inOut",
         });
       }
     },
@@ -97,7 +97,7 @@ const Hero = () => {
 
       <div
         id="video-frame"
-        className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
+        className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-black"
       >
         <div>
           <div className="mask-clip-path absolute-center absolute z-50 size-64 cursor-pointer overflow-hidden rounded-lg">
